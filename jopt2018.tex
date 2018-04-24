@@ -1,0 +1,304 @@
+\documentclass{beamer}
+
+\mode<presentation> {
+  \usetheme{Madrid}
+  \setbeamertemplate{navigation symbols}{}
+}
+
+\usepackage{amsmath,amssymb,empheq}
+\usepackage{color}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{svg} % IMPORTANT NOTE: Images in the SVG format should be sized at 450x280px
+\setsvg{inkscape=inkscape -z -C,svgpath=images/}
+
+\graphicspath{{images/}}
+
+\newcommand{\AutoSectionTitle}{}
+
+
+%% TITLE PAGE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\title[Comparison of Optimization Methods]{A Comparison of Optimization Methods for Multi-Objective Constrained Bin Packing Problems}
+
+\author[P. Olivier, A. Lodi, G. Pesant] {
+  P. Olivier$^1$, A. Lodi$^1$, G. Pesant$^1$ \\
+  \vspace{0.5cm}
+  \scriptsize $^1$École polytechnique de Montréal, Montreal, Canada \\
+  \{philippe.olivier, andrea.lodi, gilles.pesant\}@polymtl.ca \\
+  \vspace{1cm}
+  \normalsize JOPT 2018
+}
+
+\date[JOPT 2018]{8 May 2018}
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents
+\end{frame}
+
+
+%% THE WEDDING SEATING PROBLEM %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{The Wedding Seating Problem}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_groups_and_tables}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_groups_seated}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_relations0}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_relations1}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_relations2}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_relations3}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_relations4}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{wsp_balanced_tables}
+  \end{center}
+\end{frame}
+
+
+%% EXISTING METHODS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{Existing Methods}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \framesubtitle{Overview}
+  \begin{itemize}
+  \item Original IP model [Bellows and Petersen, \emph{Annals of Improbable Research}, 2012]. \\~\\
+  \item Two-stage algorithm using tabu search [Lewis, \emph{WorldComp International Conference Proceedings}, 2013]. \\~\\
+  \item Improved IP model [Lewis and Carroll, \emph{Journal of the Operational Research Society}, 2016].
+  \end{itemize}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \framesubtitle{Two-stage algorithm using tabu search [Lewis, 2013]}
+  Build a graph where nodes represent groups, edges represent relations, and colors represent tables. \\~\\
+  \pause
+  \begin{itemize}
+  \item Stage 1: Color nodes to find an initial feasible solution \\~\\
+    \pause
+  \item Stage 2: Improve this feasible solution with a tabu search \\~\\
+  \end{itemize}
+\end{frame}
+
+
+%% CONSTRAINT PROGRAMMING MODEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{Constraint Programming Model}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_conflict_graph1}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_conflict_graph2}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_model1}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_model2}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_model3}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_model4}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \begin{center}
+    \includesvg{cp_model5}
+  \end{center}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \framesubtitle{Branching Heuristic}
+  Similar to \emph{best fit decreasing}: \\~\\
+  \pause
+  \begin{enumerate}
+  \item Pick the largest group yet unassigned \\~\\
+    \pause
+  \item Sit that group at the best possible table \\~\\
+    \pause
+  \item If no table has enough room, start a new table
+  \end{enumerate}
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\end{document} 

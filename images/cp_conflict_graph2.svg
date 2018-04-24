@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:bx="https://boxy-svg.com"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 450 280"
+   version="1.1"
+   id="svg70"
+   sodipodi:docname="cp_conflict_graph2.svg"
+   width="450"
+   height="280"
+   inkscape:version="0.92.2 2405546, 2018-03-11">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1020"
+     id="namedview72"
+     showgrid="false"
+     inkscape:zoom="2.9604204"
+     inkscape:cx="262.36752"
+     inkscape:cy="138.98521"
+     inkscape:window-x="0"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg70" />
+  <metadata
+     id="metadata76">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs74" />
+  <circle
+     r="13.875337"
+     id="ellipse2"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="141.03539"
+     cx="74.753784" />
+  <text
+     id="text4"
+     style="font-size:11.74509335px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406833"
+     transform="rotate(-54.734514)"
+     y="135.25082"
+     x="-42.088799">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan406">\footnotesize \textbf{Definitely Apart}</tspan>
+  </text>
+  <circle
+     r="13.875337"
+     id="ellipse6"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="141.29633"
+     cx="230.51982" />
+  <circle
+     r="13.875337"
+     id="ellipse8"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="28.726067"
+     cx="157.74155" />
+  <ellipse
+     ry="13.875337"
+     rx="13.875322"
+     id="ellipse10"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="141.29649"
+     cx="370.31799" />
+  <text
+     id="text18"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714;"
+     y="145.8663"
+     x="365.00406">
+    <tspan
+       style="font-size:5.33333333px"
+       id="tspan336">\textbf{D}</tspan>
+  </text>
+  <path
+     inkscape:connector-curvature="0"
+     id="path20"
+     style="fill:#d8d8d8;stroke:#000000;stroke-width:5.1384697"
+     d="M 82.8689,128.20684 146.74669,38.15002" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path22"
+     style="fill:#d8d8d8;stroke:#000000;stroke-width:5.1384697"
+     d="m 166.11944,39.720924 56.02327,90.580196" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path24"
+     style="fill:#d8d8d8;stroke:#000000;stroke-width:5.1384697"
+     d="M 245.18068,140.7726 H 357.22795" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path26"
+     style="fill:#d8d8d8;stroke:#000000;stroke-width:5.1384697"
+     d="M 217.43074,143.9144 88.105001,142.86762" />
+  <text
+     id="text32"
+     style="font-size:11.74509335px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406833"
+     transform="rotate(59.237679)"
+     y="-129.3279"
+     x="132.80569">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan408">\footnotesize \textbf{Definitely Apart}</tspan>
+  </text>
+  <ellipse
+     ry="13.875337"
+     rx="13.875322"
+     id="ellipse34"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="28.725256"
+     cx="269.26581" />
+  <circle
+     r="13.875337"
+     id="ellipse38"
+     style="fill:none;stroke:#000000;stroke-width:5.13846207"
+     cy="30.296003"
+     cx="362.46396" />
+  <ellipse
+     id="ellipse42"
+     style="fill:none;stroke:#ff0000;stroke-width:2.20220137"
+     ry="32.723976"
+     rx="110.73843"
+     cy="142.08217"
+     cx="301.46597" />
+  <ellipse
+     id="ellipse44"
+     style="fill:none;stroke:#ff0000;stroke-width:2.20220137"
+     ry="104.19275"
+     rx="105.50306"
+     cy="107.52449"
+     cx="153.02956" />
+  <text
+     id="text46"
+     style="font-size:17.61761093px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="222.12532"
+     x="300.38486">
+    <tspan
+       id="tspan44"
+       style="font-size:5.33333349px">\textbf{C $\neq$ D}</tspan>
+  </text>
+  <text
+     id="text48"
+     style="font-size:17.61761093px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="276.09863"
+     x="39.86578">
+    <tspan
+       id="tspan40"
+       style="font-size:5.33333349px">\textbf{alldifferent(A, B, C)}</tspan>
+  </text>
+  <path
+     inkscape:connector-curvature="0"
+     id="path50"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2.20220137"
+     d="m 121.79486,206.09321 -17.37043,42.42836" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path52"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:0.73406714px"
+     d="M 102.24167,229.25925" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path54"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:0.73406714px"
+     d="M 117.94923,240.77749" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path56"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:0.73406714px"
+     d="M 117.42585,240.77749" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path58"
+     bx:shape="triangle 59.254 273.356 18.341 17.636 0.5 0 1@107b804c"
+     style="fill:#ff0000;stroke-width:0.73406714"
+     d="M 99.063439,258.29884 98.866471,243.9855 111.1206,249.56248 Z" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path60"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2.20220137"
+     d="m 285.07433,173.86801 22.25985,23.92105" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path62"
+     bx:shape="triangle -58.741 -281.778 18.182 18.179 0.5 0 1@930635b9"
+     style="fill:#ff0000;stroke-width:0.73406714"
+     d="m 315.71696,205.62131 -4.75848,-14.03558 -9.51738,9.35715 z" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path64"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:2.20220137"
+     d="m 178.47124,271.7952 32.65432,0.12769" />
+  <path
+     inkscape:connector-curvature="0"
+     id="path66"
+     bx:shape="triangle 58.741 281.779 18.182 18.179 0.5 0 1@b6f0dfd0"
+     style="fill:#ff0000;stroke:#ff0000;stroke-width:0.73406637"
+     d="m 222.59242,271.84586 -13.28937,-6.55988 -0.11333,13.34632 z" />
+  <text
+     id="text68"
+     style="font-size:17.61761093px;font-family:sans-serif;white-space:pre;fill:#ff0000;stroke-width:0.73406714"
+     y="276.13348"
+     x="231.87102">
+    <tspan
+       id="tspan42"
+       style="font-size:5.33333349px">\textbf{Needs 3+ tables}</tspan>
+  </text>
+  <text
+     x="256.89362"
+     y="134.11896"
+     style="font-size:11.74509239px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406827"
+     id="text332">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan334">\footnotesize \textbf{Definitely Apart}</tspan>
+  </text>
+  <text
+     id="text18-3"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="36.017914"
+     x="357.99646">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan336-6">\textbf{F}</tspan>
+  </text>
+  <text
+     id="text18-7"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="33.315598"
+     x="263.75311">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan336-5">\textbf{E}</tspan>
+  </text>
+  <text
+     id="text18-35"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="33.991177"
+     x="152.95804">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan336-62">\textbf{B}</tspan>
+  </text>
+  <text
+     id="text18-9"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="146.13741"
+     x="224.90727">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan336-1">\textbf{C}</tspan>
+  </text>
+  <text
+     id="text18-2"
+     style="font-size:8px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406714"
+     y="146.13741"
+     x="69.523933">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan336-7">\textbf{A}</tspan>
+  </text>
+  <text
+     x="105.33965"
+     y="136.22171"
+     style="font-size:11.74509239px;font-family:sans-serif;white-space:pre;fill:#333333;stroke-width:0.73406827"
+     id="text332-0">
+    <tspan
+       style="font-size:5.33333349px"
+       id="tspan334-9">\footnotesize \textbf{Definitely Apart}</tspan>
+  </text>
+</svg>
