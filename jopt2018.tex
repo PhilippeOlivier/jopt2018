@@ -64,9 +64,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_groups_and_tables}
   \end{center}
+  
 \end{frame}
 
 
@@ -75,9 +77,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_groups_seated}
   \end{center}
+  
 \end{frame}
 
 
@@ -86,9 +90,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_relations0}
   \end{center}
+  
 \end{frame}
 
 
@@ -97,9 +103,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_relations1}
   \end{center}
+  
 \end{frame}
 
 
@@ -108,9 +116,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_relations2}
   \end{center}
+  
 \end{frame}
 
 
@@ -119,9 +129,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_relations3}
   \end{center}
+  
 \end{frame}
 
 
@@ -130,9 +142,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_relations4}
   \end{center}
+  
 \end{frame}
 
 
@@ -141,9 +155,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{wsp_balanced_tables}
   \end{center}
+  
 \end{frame}
 
 
@@ -166,11 +182,13 @@
 \begin{frame}
   \frametitle{\AutoSectionTitle}
   \framesubtitle{Overview}
+  
   \begin{itemize}
   \item Original IP model [Bellows and Petersen, \emph{Annals of Improbable Research}, 2012]. \\~\\
   \item Two-stage algorithm using tabu search [Lewis, \emph{WorldComp International Conference Proceedings}, 2013]. \\~\\
   \item Improved IP model [Lewis and Carroll, \emph{Journal of the Operational Research Society}, 2016].
   \end{itemize}
+  
 \end{frame}
 
 
@@ -180,20 +198,26 @@
 \begin{frame}
   \frametitle{\AutoSectionTitle}
   \framesubtitle{Two-stage algorithm using tabu search [Lewis, 2013]}
+  
   Build a graph where nodes represent groups, edges represent relations, and colors represent tables. \\~\\
+
   \pause
+
   \begin{itemize}
   \item Stage 1: Color nodes to find an initial feasible solution \\~\\
+    
     \pause
+    
   \item Stage 2: Improve this feasible solution with a tabu search \\~\\
   \end{itemize}
+  
 \end{frame}
 
 
-%% CONSTRAINT PROGRAMMING MODEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CP MODEL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\renewcommand{\AutoSectionTitle}{Constraint Programming Model}
+\renewcommand{\AutoSectionTitle}{CP Model}
 
 \section{\AutoSectionTitle}
 
@@ -208,9 +232,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_conflict_graph1}
   \end{center}
+  
 \end{frame}
 
 
@@ -219,9 +245,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_conflict_graph2}
   \end{center}
+  
 \end{frame}
 
 
@@ -230,9 +258,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_model1}
   \end{center}
+  
 \end{frame}
 
 
@@ -241,9 +271,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_model2}
   \end{center}
+  
 \end{frame}
 
 
@@ -252,9 +284,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_model3}
   \end{center}
+  
 \end{frame}
 
 
@@ -263,9 +297,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_model4}
   \end{center}
+  
 \end{frame}
 
 
@@ -274,9 +310,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
+  
   \begin{center}
     \includesvg{cp_model5}
   \end{center}
+  
 \end{frame}
 
 
@@ -286,15 +324,183 @@
 \begin{frame}
   \frametitle{\AutoSectionTitle}
   \framesubtitle{Branching Heuristic}
+  
   Similar to \emph{best fit decreasing}: \\~\\
+
   \pause
+
   \begin{enumerate}
   \item Pick the largest group yet unassigned \\~\\
+    
     \pause
-  \item Sit that group at the best possible table \\~\\
+    
+  \item Assign that group at the best possible table \\~\\
+    
     \pause
-  \item If no table has enough room, start a new table
+    
+  \item If no table has enough room, open a new table
   \end{enumerate}
+  
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  \framesubtitle{Large Neighborhood Search}
+  
+  TODO
+  
+\end{frame}
+
+
+%% IP MODEL A %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{IP Model A}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  
+  \begin{equation*}
+    x_{ik}\coloneqq
+    \begin{cases}
+      1, &\mbox{ if group $i$ is assigned to table $k$,} \\
+      0, &\mbox{ otherwise.}
+    \end{cases}
+  \end{equation*}
+  
+  \begin{alignat*}{3}
+    \uncover<2->{& \min \quad && \sum \limits_{k \in \mathcal{T}} \sum \limits_{i=1}^{n-1} \sum \limits_{j=i+1}^{n} x_{ik}x_{jk}c_{ij}} \\~\\
+    \uncover<3->{&&& \sum \limits_{k \in \mathcal{T}} x_{ik} = 1 && \quad \forall i \in \mathcal{G}} \\~\\
+    \uncover<4->{&&& x_{ik} + x_{jk} \leq 1 && \quad \forall i,j \in \mathcal{G} : c_{ij} = \infty, \quad \forall k \in \mathcal{T}} \\~\\
+    \uncover<5->{&&& x_{ik} = 0 && \quad \forall i \in \mathcal{G}, \quad \forall k \in \{i+1, \dots, m\}}
+  \end{alignat*}
+  
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+  
+  \begin{alignat*}{3}
+    \uncover<1->{&&& \sum \limits_{i \in \mathcal{G}} x_{ik} w_{i} \geq \ell && \quad \forall k \in \mathcal{T}} \\
+    \uncover<1->{&&& \sum \limits_{i \in \mathcal{G}} x_{ik} w_{i} \leq u && \quad \forall k \in \mathcal{T}} \\
+    \uncover<2->{&&& \sum \limits_{i \in \mathcal{G}} x_{ik} w_{ik} - w/m \leq o_{k} && \quad \forall k \in \mathcal{T}} \\
+    \uncover<2->{&&& \sum \limits_{i \in \mathcal{G}} x_{ik} w_{ik} - w/m \geq -o_{k} && \quad \forall k \in \mathcal{T}} \\
+    \uncover<2->{&&& \sum \limits_{k \in \mathcal{T}} o_{k} \geq d_{\min} &&} \\
+    \uncover<2->{&&& \sum \limits_{k \in \mathcal{T}} o_{k} \leq d_{\max} &&} \\
+    \uncover<2->{&&& o_{k} \in \{\ell, ..., u\} && \quad \forall k \in \mathcal{T}} \\
+    \uncover<3->{&&& x_{ik} \in \{0, 1\} && \quad \forall i \in \mathcal{G}, \quad \forall k \in \mathcal{T}}
+  \end{alignat*}
+  
+\end{frame}
+
+
+%% IP MODEL B %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{IP Model B}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+
+  $\mathbb{S}$: All subsets of groups that can be assigned at the same table. \\~\\
+
+  \pause
+  
+  \begin{equation*}
+    x_{S}\coloneqq
+    \begin{cases}
+      1, &\mbox{ if pattern $S$ is selected,} \\
+      0, &\mbox{ otherwise.}
+    \end{cases}
+  \end{equation*}
+
+  TODO
+  
+\end{frame}
+
+
+%% RESULTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{Results}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+
+  TODO
+  
+\end{frame}
+
+
+%% CONCLUSION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\AutoSectionTitle}{Results}
+
+\section{\AutoSectionTitle}
+
+\begin{frame}
+  \frametitle{Outline}
+  \tableofcontents[currentsection]
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
+  \frametitle{\AutoSectionTitle}
+
+  \begin{itemize}
+    \item CP: Very good early solution, and conflicts only (mention conflicts before though)
+  \end{itemize}
+
+  %ip model a: simple but inefficient
+%ip model b: more complex but very good (when given the time), gives good lower bound
+%cp: very good early solutions, hard to improve, proves optimality for small instances, 
+
+  
 \end{frame}
 
 
@@ -302,3 +508,6 @@
 
 
 \end{document} 
+
+
+
