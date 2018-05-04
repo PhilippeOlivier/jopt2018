@@ -485,7 +485,7 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
-  \framesubtitle{Pricing Problem (objective)}
+  \framesubtitle{Pricing Problem}
 
   \begin{equation*}
     z_{i}\coloneqq
@@ -498,8 +498,10 @@
   \pause
 
   \begin{alignat*}{3}
-    & \max \quad && \sum \limits_{i=1}^{n} y_{i}^{*}z_{i} + \zeta^{*} + \beta(\gamma^{*}+\delta^{*}) - \sum \limits_{i=1}^{n-1} \sum \limits_{j=i+1}^{n} c_{ij} z_{i} z_{j} && \quad \text{if } \gamma^{*}+\delta^{*}<0 \\
-    & \max \quad && \sum \limits_{i=1}^{n} y_{i}^{*}z_{i} + \zeta^{*} - \beta(\gamma^{*}+\delta^{*}) - \sum \limits_{i=1}^{n-1} \sum \limits_{j=i+1}^{n} c_{ij} z_{i} z_{j} && \quad \text{if } \gamma^{*}+\delta^{*}>0
+    &&& \sum \limits_{i=1}^{n} w_{i} z_{i} \geq \ell && \\
+    &&& \sum \limits_{i=1}^{n} w_{i} z_{i} \leq u && \\
+    &&& \sum \limits_{i=1}^{n} w_{i} z_{i} - w/m \leq \beta && \\
+    &&& \sum \limits_{i=1}^{n} w_{i} z_{i} - w/m \geq -\beta &&
   \end{alignat*}
   
 \end{frame}
@@ -510,15 +512,18 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
-  \framesubtitle{Pricing Problem (constraints)}
+  \framesubtitle{Pricing Problem}
   
   \begin{alignat*}{3}
-    \uncover<1->{&&& z_{i} + z_{j} \leq 1 && \quad \forall i,j \in \mathcal{G}:c_{ij}=\infty} \\
-    \uncover<2->{&&& \sum \limits_{i=1}^{n} w_{i} z_{i} \geq \ell &&} \\
-    \uncover<2->{&&& \sum \limits_{i=1}^{n} w_{i} z_{i} \leq u &&} \\
-    \uncover<3->{&&& \sum \limits_{i=1}^{n} w_{i} z_{i} - w/m \leq \beta &&} \\
-    \uncover<3->{&&& \sum \limits_{i=1}^{n} w_{i} z_{i} - w/m \geq -\beta &&} \\
-    \uncover<4->{&&& z_{i} \in \{0, 1\} && \quad \forall i \in \mathcal{G}}
+    &&& z_{i} + z_{j} \leq 1 && \quad \forall i,j \in \mathcal{G}:c_{ij}=\infty \\~\\
+    &&& z_{i} \in \{0, 1\} && \quad \forall i \in \mathcal{G}
+  \end{alignat*}
+
+  \pause
+  
+  \begin{alignat*}{3}
+    & \max \quad && \sum \limits_{i=1}^{n} y_{i}^{*}z_{i} + \zeta^{*} + \beta(\gamma^{*}+\delta^{*}) - \sum \limits_{i=1}^{n-1} \sum \limits_{j=i+1}^{n} c_{ij} z_{i} z_{j} && \quad \text{if } \gamma^{*}+\delta^{*}<0 \\
+    & \max \quad && \sum \limits_{i=1}^{n} y_{i}^{*}z_{i} + \zeta^{*} - \beta(\gamma^{*}+\delta^{*}) - \sum \limits_{i=1}^{n-1} \sum \limits_{j=i+1}^{n} c_{ij} z_{i} z_{j} && \quad \text{if } \gamma^{*}+\delta^{*}>0
   \end{alignat*}
   
 \end{frame}
@@ -644,7 +649,7 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
-  \framesubtitle{Comparison with metaheuristics}
+  \framesubtitle{Comparison With Metaheuristics}
 
   \begin{figure}[H]
     \begin{center}
@@ -698,11 +703,11 @@
 
 \begin{frame}
   \frametitle{\AutoSectionTitle}
-  \framesubtitle{Metaheuristics}
+  \framesubtitle{Metaheuristics Model}
 
   \begin{itemize}
   \item[$+$] Good early solutions \\~\\
-  \item[$+$] Scales well \\~\\
+  \item[$+$] Scales well \\~\\~\\~\\~\\
 
     \pause
     
@@ -723,7 +728,7 @@
   \begin{itemize}
   \item[$+$] Very good early solutions \\~\\
   \item[$+$] Proves optimality for small instances \\~\\
-  \item[$+$] Quickly proves optimality or infeasibility for all instances when there are no costs \\~\\
+  \item[$+$] Quickly proves optimality or infeasibility for all instances when there are no costs \\~\\~\\~\\~\\
 
     \pause
     
@@ -743,7 +748,7 @@
 
   \begin{itemize}
   \item[$+$] Simple model \\~\\
-  \item[$+$] Proves optimality for small instances \\~\\
+  \item[$+$] Proves optimality for small instances \\~\\~\\~\\~\\
 
     \pause
     
@@ -764,7 +769,7 @@
   \begin{itemize}
   \item[$+$] Near-optimal solutions \\~\\
   \item[$+$] No symmetry \\~\\
-  \item[$+$] Provides a good lower bound \\~\\
+  \item[$+$] Provides a good lower bound \\~\\~\\~\\~\\
 
     \pause
     
@@ -773,6 +778,13 @@
   \item[$-$] Poor early solutions
   \end{itemize}
 
+\end{frame}
+
+
+%---------------------------------------------------------------------------------------------------
+
+
+\begin{frame}
 \end{frame}
 
 
